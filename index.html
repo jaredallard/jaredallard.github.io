@@ -185,9 +185,19 @@
 
 			color:#FFFFFF;
 		}
+		.loading {
+			position:fixed;
+			z-index:1000000;
+			top:0;
+			bottom:0;
+			right:0;
+			background-color:#FFFFFF;
+		}
 	</style>
 
 	<body>
+		<div class='loading'>
+		</div>
 		<div class='wrapper-me'>
 			<div class='main-fade'></div>
 			<div class='main-bkg'></div>
@@ -244,6 +254,9 @@
 
 		$(window).on('resize', function() {
 			resizeMe();
+		});
+		$(window).on('load', function() {
+			$(".loading").remove();
 		});
 	</script>
 </html>

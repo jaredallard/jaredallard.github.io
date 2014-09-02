@@ -1,0 +1,212 @@
+/** 
+ * (c) 2014 RainbowDashDC, Jared Allard.
+ *
+ * Behold, my beautiful CSS!
+ **/
+
+body {
+			background-color:#FFF;
+			max-height:100%;
+			height:100%;
+			max-width:100%;
+			width:100%;
+		}
+		.wrapper-me {
+			height:600px;
+			width:100%;
+			background-color:#FFF;
+		}
+		.wrapper-about {
+			height:auto;
+			width:100%;
+			background-color:#FFF;	
+		}
+		.wrapper-final {
+			height:200px;
+			width:100%;
+			background-color:#474747;
+		}
+		.main-content {
+			height:400px;
+			min-width:200px;
+			width:100%;
+			max-width:500px;
+
+			margin-right:auto;
+			margin-left:auto;
+			margin-top:100px;
+			margin-bottom:-50px;s
+		}
+		.main-fade {
+			position:absolute;
+			height:600px;
+			width:100%;
+
+			z-index:2;
+
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:-50px;
+
+			-webkit-box-shadow: inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
+			-moz-box-shadow:    inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
+			box-shadow:         inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
+		}
+		.main-bkg {
+			position:absolute;
+			height:600px;
+			width:100%;
+
+			z-index:2;
+
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:-50px;
+
+			background-color:#000;
+			opacity:0.81;
+		}
+		.main-wrapper-text {
+			position:absolute;
+			padding-top:70px;
+
+			left:50%;
+			z-index:10;
+		}
+		.ctr {
+			width:100%;
+			position: relative; 
+			left: -50%;
+			text-align:center;
+		}
+		.ctr img {
+			height:100px;
+			width:auto;
+
+			-webkit-border-radius: 90px;
+			-moz-border-radius: 90px;
+			border-radius: 90px; 
+		}
+		.footer {
+			text-align:center;
+			font-size:15px;
+			padding-top:100px;
+		}
+		.footer .fa {
+			font-size:30px;
+			color:#fff;
+			text-decoration:none;
+			padding-right:10px;
+		}
+		.footer .fa:hover {
+			color:#00b2b2;
+		}
+		.social-wrapper {
+			width:130px;
+			height:40px;
+
+			/** Center **/
+			margin-right:auto;
+			margin-left:auto;
+
+			padding:5px 5px 5px 5px;
+			text-align:center;
+
+			border:1px solid #FFFFFF;
+			-webkit-border-radius: 180px;
+			-moz-border-radius: 180px;
+			border-radius: 180px;
+		}
+		.down {
+			position:absolute;
+			z-index:11;
+			bottom:0;
+			left:50%;
+		}
+		.down-final {
+			width:100%;
+			position: relative; 
+			left: -50%;
+			font-size:40px;
+			text-align:center;
+		}
+		.down-final a:hover {
+			color:#999 !important;
+		}
+		.down-final a {
+			color:#FFF;
+			text-decoration:none;
+		}
+
+		/** Content **/
+		.content h1 {
+			color:#999;
+			font-weight:bold;
+		}
+
+		/** About **/
+		.about-text-wrapper {
+			position:relative;
+
+			min-width:200px;
+			min-height:100px;
+			width:100%;
+			max-width:90%;
+
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:20px;
+
+			color:#000;
+
+			text-align:left;
+			height:100%;
+		}
+		.about-text a:hover,
+		.about-text a {
+			color:#39a9ff;
+		}
+		.about-text {
+			position:relative;
+
+			padding:20px 20px 20px 20px;
+
+			font-size:20px;
+
+			height:100%;
+			width:100%;
+
+			color:#999;
+		}
+		.about-text h2 {
+			color:#606060;
+			text-align:center;
+		}
+		.about-text-wrapper h3 {
+			text-align:center;
+			margin-right:auto;
+			margin-left:auto;
+			width:70%;
+		}
+		.about-text-wrapper hr {
+			margin-top:50px;
+			border:1px solid #c3c3c3;
+		}
+		.loading {
+			position:fixed;
+			z-index:1000000;
+			top:0;
+			bottom:0;
+			right:0;
+			background-color:#FFFFFF;
+		}
+		.wrapper-img {
+			text-align:center;
+		}
+		.wrapper-img img {
+			margin-top:10px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border:5px solid #eaeaea;
+		}

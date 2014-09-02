@@ -7,206 +7,13 @@
 		<meta name="keywords" content="developer, js, nodejs, php, bash, batch" />
 		<link rel='stylesheet' href='css/bootstrap.min.css'/>
 		<link rel='stylesheet' href='css/font-awesome.min.css'/>
+		<link rel='stylesheet' href='css/theme.css'/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.backstretch.min.js"></script>
 		<script>
 			$('meta[name=viewport]').attr('content','width='+$(window).width()+',user-scalable=no')
 		</script>
 	</head>
-
-	<style>
-		body {
-			background-color:#FFF;
-			max-height:100%;
-			height:100%;
-			max-width:100%;
-			width:100%;
-		}
-		.wrapper-me {
-			height:600px;
-			width:100%;
-			background-color:#FFF;
-		}
-		.wrapper-about {
-			height:auto;
-			width:100%;
-			background-color:#999;	
-		}
-		.wrapper-final {
-			height:200px;
-			width:100%;
-			background-color:#474747;
-		}
-		.main-content {
-			height:400px;
-			min-width:200px;
-			width:100%;
-			max-width:500px;
-
-			margin-right:auto;
-			margin-left:auto;
-			margin-top:100px;
-			margin-bottom:-50px;s
-		}
-		.main-fade {
-			position:absolute;
-			height:600px;
-			width:100%;
-
-			z-index:2;
-
-			margin-right:auto;
-			margin-left:auto;
-			margin-bottom:-50px;
-
-			-webkit-box-shadow: inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
-			-moz-box-shadow:    inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
-			box-shadow:         inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
-		}
-		.main-bkg {
-			position:absolute;
-			height:600px;
-			width:100%;
-
-			z-index:2;
-
-			margin-right:auto;
-			margin-left:auto;
-			margin-bottom:-50px;
-
-			background-color:#000;
-			opacity:0.81;
-		}
-		.main-wrapper-text {
-			position:absolute;
-			min-width:200px;
-			width:100%;
-			max-width:500px;
-
-			padding-top:70px;
-
-			left:50%;
-			z-index:10;
-		}
-		.ctr {
-			width:100%;
-			position: relative; 
-			left: -50%;
-			text-align:center;
-		}
-		.ctr img {
-			height:100px;
-			width:auto;
-
-			-webkit-border-radius: 90px;
-			-moz-border-radius: 90px;
-			border-radius: 90px; 
-		}
-		.footer {
-			text-align:center;
-			font-size:15px;
-			padding-top:100px;
-		}
-		.footer .fa {
-			font-size:30px;
-			color:#fff;
-			text-decoration:none;
-			padding-right:10px;
-		}
-		.footer .fa:hover {
-			color:#00b2b2;
-		}
-		.social-wrapper {
-			width:130px;
-			height:40px;
-
-			/** Center **/
-			margin-right:auto;
-			margin-left:auto;
-
-			padding:5px 5px 5px 5px;
-			text-align:center;
-
-			border:1px solid #FFFFFF;
-			-webkit-border-radius: 180px;
-			-moz-border-radius: 180px;
-			border-radius: 180px;
-		}
-		.down {
-			position:absolute;
-			z-index:11;
-			bottom:0;
-			left:50%;
-		}
-		.down-final {
-			width:100%;
-			position: relative; 
-			left: -50%;
-			font-size:40px;
-			text-align:center;
-		}
-		.down-final a:hover {
-			color:#999 !important;
-		}
-		.down-final a {
-			color:#FFF;
-			text-decoration:none;
-		}
-
-		/** Content **/
-		.content h1 {
-			color:#999;
-			font-weight:bold;
-		}
-
-		/** About **/
-		.about-text-wrapper {
-			position:relative;
-
-			min-width:200px;
-			min-height:100px;
-			width:100%;
-			max-width:90%;
-
-			margin-right:auto;
-			margin-left:auto;
-
-			text-align:left;
-			height:100%;
-			background-color:rgba(0, 0, 0, 0.8);
-		}
-		.about-text {
-			position:relative;
-
-			padding:20px 20px 20px 20px;
-
-			font-size:20px;
-
-			height:100%;
-			width:100%;
-
-			color:#FFFFFF;
-		}
-		.loading {
-			position:fixed;
-			z-index:1000000;
-			top:0;
-			bottom:0;
-			right:0;
-			background-color:#FFFFFF;
-		}
-		.wrapper-img {
-			text-align:center;
-		}
-		.wrapper-img img {
-			margin-top:10px;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-			border:5px solid #FFFFFF;
-		}
-	</style>
-
 	<body>
 		<div class='loading'>
 		</div>
@@ -232,27 +39,30 @@
 		</script>
 		<div class='wrapper-about'>
 			<div style='background-color:#FFFFFF'>
-				<h2 style='padding-bottom:20px;font-size:30px;font-weight:bold;text-align:center;color:#999'>About Me</h2>
+				<h1 style='padding-bottom:20px;font-weight:bold;text-align:center;color:#999'>About Me</h1>
 			</div>
 			<div class='about-text-wrapper'>
 				<div class='wrapper-img'>
 					<img src='img/me.jpg' height="200">
 					<br /><br />
 				</div>
-				<div class='about-text'><h2 style='text-align:center;'>2008-2012</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a 16 year old software developer. I've been programming since I was 10, starting with batch, and then later bash. I focused on these languages for about 3~ years, creating various low-level console applications. Not satisfied with the speeds of low-level scripting languages; I picked up PHP. There I started work on a few projects such as; <a href='http://github.com/RDashINC/phc-win'>PHC-WIN</a>, <a href='http://github.com/RDashINC/rrpg'>rrpg</a>, and PHC-LIN. Soon thereafter I found myself in need of after-page-load actions, so I picked up Javascript and fell inlove with it.
+				<h3><em>I'm a 16 year old programmer, trying to create; useful, meaningful, and creative applications.</em>
+					<hr />
+				</h3>
+				<div class='about-text'><h2>2008-2012</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2008, my coding life began, starting with batch and then later bash. I focused on these languages for about 3~ years, creating various low-level console applications. Not satisfied with the speeds of low-level scripting languages; I picked up PHP. There I started work on a few projects such as; <a href='http://github.com/RDashINC/phc-win'>PHC-WIN</a>, <a href='http://github.com/RDashINC/rrpg'>rrpg</a>, and PHC-LIN. Soon thereafter I found myself in need of after-page-load actions, so I picked up Javascript and fell inlove with it.
 				<br />
 				<br />
-				<h2 style='text-align:center;'>2013-2014</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After picking up Javascript I began working with third party CSS librarys such as; bootstrap, font-awesome, and JQuery-UI. Using some of these technologies I started developing a Twitter client. I soon discovered pure js wouldn't work, that's when I found out about node.js. Loving the idea, I developed an API for an old school of mine, <a href='http://github.com/RDashINC/tcs-api'>TCS-api</a> which allows a mobile app too check-in/check-out of school and handle JC cases (the schools form of discipline). Since then I've been hard at work on <a href='http://rdashinc.github.io/Twimber'>Twimber</a> and <a href='http://rdashinc.github.io/rrpg'>Equestria's Betrayal</a>.
+				<h2>2013-2014</h2>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After picking up Javascript I began working with third party CSS &amp; JS librarys such as; bootstrap, font-awesome, jquery, and app.js. Using some of these technologies I started developing a Twitter client. I soon discovered pure js wouldn't work, that's when I found out about node.js. Loving the idea, I developed an API for an old school of mine, <a href='http://github.com/RDashINC/tcs-api'>TCS-api</a> which allows a mobile app too check-in/check-out of school and handle JC cases (the schools form of discipline). Since then I've been hard at work on <a href='http://rdashinc.github.io/Twimber'>Twimber</a> and <a href='http://rdashinc.github.io/rrpg'>Equestria's Betrayal</a>.
 				</div>
 			</div>
 		</div>
 		<div class='wrapper-final'>
 			<div class='footer'>
-				(c) 2014 RainbowDashDC
+				&copy; 2014 RainbowDashDC
 				<br /><br />
 				<div class='social-wrapper'>
-					&nbsp;&nbsp;
+					&nbsp;
 					<a class='fa fa-twitter' href='http://twitter.com/2root4you'></a>
 					<a class='fa fa-facebook' href='http://facebook.com/Jared631'></a>
 					<a class='fa fa-linkedin' href='http://www.linkedin.com/pub/jared-allard/44/bbb/549'></a>
@@ -263,9 +73,7 @@
 	<script>
 		function resizeMe() {
 			$(".wrapper-me,.main-fade,.main-bkg").height($(window).height());
-
 			$(".wrapper-me").backstretch("img/bkg.jpg");
-			$(".wrapper-about").backstretch("img/bkg2.jpg");
 		}
 
 		resizeMe();

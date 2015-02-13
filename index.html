@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>Jared Allard</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="A 16 year old software developer." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="msvalidate.01" content="97167DAB5C11F51ACB679F9FA6C1C6D1" />
 		<meta name="keywords" content="developer, js, nodejs, php, bash, batch" />
 		<link rel='stylesheet' href='css/bootstrap.min.css'/>
@@ -12,79 +13,62 @@
 		<link rel='stylesheet' href='css/font.css'/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.backstretch.min.js"></script>
-		<script>
-			$('meta[name=viewport]').attr('content','width='+$(window).width()+',user-scalable=no')
-		</script>
 	</head>
-	<body>
-		<div class='loading'>
-		</div>
-		<div class='wrapper-me'>
-			<div class='main-fade'></div>
-			<div class='main-bkg'></div>
-			<div class='main-wrapper-text'>
-				<div class='ctr'>
-					<img class='center' src='img/rdc.png'/>
-					<br /><br />
-					<h1>Jared Allard</h1>
-					<h2 style='color:#999;font-weight:bold;'>Software Developer</h2>
-				</div>
-			</div>
-			<div class='down'>
-				<div class='down-final'>
-					<a class='fa fa-chevron-down' onclick='$("html,body").animate({scrollTop: $(".wrapper-about").offset().top});'></a>
-				</div>
-			</div>
-		</div>
-		<script>
-			$(".wrapper-me").backstretch("img/bkg.jpg");
-		</script>
-		<div class='wrapper-about'>
-			<div style='background-color:#FFFFFF'>
-				<h1 style='padding-bottom:20px;font-weight:bold;text-align:center;color:#999'>About Me</h1>
-			</div>
-			<div class='about-text-wrapper'>
-				<div class='wrapper-img'>
-					<img src='img/me.jpg' height="200">
-					<br /><br />
-				</div>
-				<h3><em>I'm a 16 year old programmer, trying to create; useful, meaningful, and creative applications.</em>
-					<hr />
-				</h3>
-				<div class='about-text'><h2>2008-2012</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2008, my coding life began, starting with batch and then later bash. I focused on these languages for about 3~ years, creating various low-level console applications. Not satisfied with the speeds of low-level scripting languages; I picked up PHP. There I started work on a few projects such as; <a href='http://github.com/RDashINC/phc-win'>PHC-WIN</a>, <a href='http://github.com/RDashINC/rrpg'>rrpg</a>, and PHC-LIN. Soon thereafter I found myself in need of after-page-load actions, so I picked up Javascript and fell inlove with it.
-				<br />
-				<br />
-				<h2>2013-2014</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After picking up Javascript I began working with third party CSS &amp; JS librarys such as; bootstrap, font-awesome, jquery, and app.js. Using some of these technologies I started developing a Twitter client. I soon discovered pure js wouldn't work, that's when I found out about node.js. Loving the idea, I developed an API for an old school of mine, <a href='http://github.com/RDashINC/tcs-api'>TCS-api</a> which allows a mobile app too check-in/check-out of school and handle JC cases (the schools form of discipline). Since then I've been hard at work on <a href='http://rdashinc.github.io/Twimber'>Twimber</a> and <a href='http://rdashinc.github.io/rrpg'>Equestria's Betrayal</a>.
-				</div>
-			</div>
-		</div>
-		<div class='wrapper-final'>
-			<div class='footer'>
-				&copy; 2014 Jared Allard, a.k.a RainbowDashDC
-				<br /><br />
-				<div class='social-wrapper'>
-					&nbsp;
-					<a class='fa fa-twitter' href='http://twitter.com/2root4you'></a>
-					<a class='fa fa-facebook' href='http://facebook.com/Jared631'></a>
-					<a class='fa fa-linkedin' href='http://www.linkedin.com/pub/jared-allard/44/bbb/549'></a>
-				</div>
-			</div>
-		</div>
-	</body>
-	<script>
-		function resizeMe() {
-			$(".wrapper-me,.main-fade,.main-bkg").height($(window).height());
-			$(".wrapper-me").backstretch("img/bkg.jpg");
-		}
-
-		resizeMe();
-
-		$(window).on('resize', function() {
-			resizeMe();
-		});
-		$(window).on('load', function() {
-			$(".loading").remove();
-		});
-	</script>
+<body>
+  <div class='loading'>
+  </div>
+  <div class='wrapper-me'>
+    <div class='main-fade'></div>
+    <div class='main-bkg'></div>
+    <div class='main-wrapper-text'>
+      <div class='ctr'>
+        <img class='center' src='https://avatars1.githubusercontent.com/u/2391349?v=3&s=460' />
+        <br /><br />
+        <h1>Jared Allard</h1>
+        <h4><em>"RainbowDashDC"</em></h4>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(".wrapper-me").backstretch("img/bkg.jpg");
+  </script>
+  <div class='wrapper-about'>
+    <div style='background-color:#FFFFFF'>
+      <h1 style='padding-bottom:20px;font-weight:bold;text-align:center;color:#999'>About Me</h1>
+    </div>
+    <div class='about-text-wrapper'>
+      <div class='wrapper-img'>
+        <img src='img/me.jpg' height="200">
+        <br /><br />
+      </div>
+      <h3>
+        <b><em>I'm a 16 year old programmer, trying to create; useful, meaningful, and creative applications.</em></b>
+        <hr />
+      </h3>
+      <div class='about-text'>
+        <h2>2008-2012</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2008, my coding life began, starting with batch and then later bash. I focused on these languages for about 3~ years, creating various low-level console applications. Not satisfied with the speeds of low-level scripting languages; I picked up PHP. There I started work on a few projects such as; <a href='http://github.com/RDashINC/phc-win'>PHC-WIN</a>, <a href='http://github.com/RDashINC/rrpg'>rrpg</a>, and PHC-LIN. Soon thereafter I found myself in need of after-page-load actions, so I picked up Javascript and fell inlove with it.
+        <br />
+        <br />
+        <h2>2013-2014</h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After picking up Javascript I began working with third party CSS &amp; JS librarys such as; bootstrap, font-awesome, jquery, and app.js. Using some of these technologies I started developing a Twitter client. I soon discovered pure js wouldn't work, that's when I found out about node.js. Loving the idea, I developed an API for an old school of mine, <a href='http://github.com/RDashINC/tcs-api'>TCS-api</a> which allows a mobile app too check-in/check-out of school and handle JC cases (the schools form of discipline). Since then I've been hard at work on <a href='http://rdashinc.github.io/Twimber'>Twimber</a> and <a href='http://rdashinc.github.io/rrpg'>Equestria's Betrayal</a>.
+        <br />
+        <br />
+        <h2>2015+</h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since the end of 2014 plus I've been looking for any work I can find! I'm now a maintainer of <a href="https://github.com/crcn/nexe">crcn/nexe</a>, and done several projects including a <a href="https://rainbowdashdc.github.io/mrbrayman">Modern Survey Site</a>! I'm always looking for fun and innovative projects to contribute too.
+      </div>
+    </div>
+  </div>
+  <div class='wrapper-final'>
+    <div class='footer'>
+      &copy; 2015 Jared Allard, a.k.a RainbowDashDC
+      <br /><br />
+      <div class='social-wrapper'>
+        &nbsp;
+        <a class='fa fa-twitter' href='http://twitter.com/2root4you'></a>
+        <a class='fa fa-facebook' href='http://facebook.com/Jared631'></a>
+        <a class='fa fa-linkedin' href='http://www.linkedin.com/pub/jared-allard/44/bbb/549'></a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

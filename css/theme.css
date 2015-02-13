@@ -12,7 +12,7 @@ body {
 			width:100%;
 		}
 		.wrapper-me {
-			height:600px;
+			height:350px;
 			width:100%;
 			background-color:#FFF;
 		}
@@ -22,12 +22,12 @@ body {
 			background-color:#FFF;	
 		}
 		.wrapper-final {
-			height:200px;
+			height:250px;
 			width:100%;
 			background-color:#474747;
 		}
 		.main-content {
-			height:400px;
+			height:350px;
 			min-width:200px;
 			width:100%;
 			max-width:500px;
@@ -39,7 +39,7 @@ body {
 		}
 		.main-fade {
 			position:absolute;
-			height:600px;
+			height:350px;
 			width:100%;
 
 			z-index:2;
@@ -54,7 +54,7 @@ body {
 		}
 		.main-bkg {
 			position:absolute;
-			height:600px;
+			height:350px;
 			width:100%;
 
 			z-index:2;
@@ -64,7 +64,7 @@ body {
 			margin-bottom:-50px;
 
 			background-color:#000;
-			opacity:0.81;
+			opacity:0.50;
 		}
 		.main-wrapper-text {
 			position:absolute;

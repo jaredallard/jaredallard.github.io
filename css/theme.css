@@ -1,4 +1,4 @@
-/** 
+/**
  * (c) 2014 RainbowDashDC, Jared Allard.
  *
  * Behold, my beautiful CSS!
@@ -19,7 +19,7 @@ body {
 		.wrapper-about {
 			height:auto;
 			width:100%;
-			background-color:#FFF;	
+			background-color:#FFF;
 		}
 		.wrapper-final {
 			height:250px;
@@ -48,9 +48,9 @@ body {
 			margin-left:auto;
 			margin-bottom:-50px;
 
-			-webkit-box-shadow: inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
-			-moz-box-shadow:    inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
-			box-shadow:         inset 1px 1px 30px 22px rgba(50, 50, 50, 0.71);
+			-webkit-box-shadow: inset 1px 1px 30px 22px rgba(50, 50, 50, 0.25);
+			-moz-box-shadow:    inset 1px 1px 30px 22px rgba(50, 50, 50, 0.25);
+			box-shadow:         inset 1px 1px 30px 22px rgba(50, 50, 50, 0.25);
 		}
 		.main-bkg {
 			position:absolute;
@@ -75,7 +75,7 @@ body {
 		}
 		.ctr {
 			width:100%;
-			position: relative; 
+			position: relative;
 			left: -50%;
 			text-align:center;
 		}
@@ -85,7 +85,7 @@ body {
 
 			-webkit-border-radius: 90px;
 			-moz-border-radius: 90px;
-			border-radius: 90px; 
+			border-radius: 90px;
 		}
 		.footer {
 			text-align:center;
@@ -125,7 +125,7 @@ body {
 		}
 		.down-final {
 			width:100%;
-			position: relative; 
+			position: relative;
 			left: -50%;
 			font-size:40px;
 			text-align:center;
@@ -176,7 +176,7 @@ body {
 			height:100%;
 			width:100%;
 
-			color:#999;
+			color:#6b6b6b;
 		}
 		.about-text h2 {
 			color:#606060;
@@ -205,8 +205,10 @@ body {
 		}
 		.wrapper-img img {
 			margin-top:10px;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
+
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			border-radius: 100px;
+
 			border:5px solid #eaeaea;
 		}

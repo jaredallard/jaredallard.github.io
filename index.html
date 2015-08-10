@@ -34,27 +34,21 @@
         </div>
 
         <div class='header-btns'>
-          <div class='nav-btn' onclick='goto(".github-repo-header-wrapper")'>
+          <div class='nav-btn' onclick='window.location="#projects"'>
             <div class='nav-btn-inner'>
               projects
             </div>
           </div>
 
-          <div class='nav-btn' onclick='goto("#twitter-header")'>
+          <div class='nav-btn' onclick='window.location="#twitter"'>
             <div class='nav-btn-inner'>
               tweets
             </div>
           </div>
 
-          <div class='nav-btn' onclick='goto(".contact-wrapper")'>
+          <div class='nav-btn' onclick='window.location="#contact"'>
             <div class='nav-btn-inner'>
               contact
-            </div>
-          </div>
-
-          <div class='nav-btn' onclick='window.location="https://github.com/jaredallard"'>
-            <div class='nav-btn-inner'>
-              github
             </div>
           </div>
         </div>
@@ -82,17 +76,17 @@
           </p>
         </div>
 
-        <div class='github-repo-header-wrapper'>
+        <div id='projects' class='github-repo-header-wrapper'>
           <h1 class='github-repo-header'>my projects</h1>
           <hr />
         </div>
-        <div class="github-repo-wrapper">
+        <div id='github-repo-wrapper' class="github-repo-wrapper">
           <h2 class='github-repo-loading'>loading...</h2>
         </div>
 
         <br />
 
-        <div id='twitter-header' class='github-repo-header-wrapper'>
+        <div id='twitter' class='github-repo-header-wrapper'>
           <h1 class='github-repo-header'>my tweets</h1>
           <hr />
         </div>
@@ -100,12 +94,12 @@
           <div id='twitterTimeline' class="twitter-timeline" data-widget-id="630544981371924480">Tweets by @jaredallard</div>
         </div>
 
-        <div class='contact-wrapper'>
+        <div id='contact' class='contact-wrapper'>
           <h1 class='contact-header'>contact me</h1>
 
           <div class='contact-object'>
             <i class='glyphicon glyphicon-envelope'></i>
-            <a href='mailto:jaredallard@outlook.com'>jaredallard(at)outlook(dot)com</a>
+            <a href='mailto:jaredallard@outlook.com'>jaredallard@outlook.com</a>
           </div>
 
           <br />
@@ -174,21 +168,19 @@
     </script>
 
     <!-- Javascripts! -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.1/reqwest.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.1/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="ttf.js"></script> <!-- twitter stuff! -->
     <script type="text/javascript">
       "use strict";
 
-      var githubRepoTemplate = Handlebars.compile($("#github-repo-template").html());
+      var githubRepoTemplate = Handlebars.compile(document.getElementById("github-repo-template").innerHTML);
 
       // fetch the Repositories, raw because gh3 makes it to complicated.
-      $.get("https://api.github.com/users/jaredallard/repos?page=1&per_page=100&direction=asc", function(data) {
+      reqwest("https://api.github.com/users/jaredallard/repos?page=1&per_page=100&direction=asc", function(data) {
         console.log(data);
 
-        $(".github-repo-wrapper").html("");
+        document.getElementById("github-repo-wrapper").innerHTML="";
 
         data.sort(function(a,b ) {
           if(a.stargazers_count < b.stargazers_count) {
@@ -212,7 +204,9 @@
             watchers: data[repo_data].watchers_count
           });
 
-          $(".github-repo-wrapper").append(ct);
+          var div = document.createElement("div");
+          div.innerHTML=ct;
+          document.getElementById("github-repo-wrapper").appendChild(div);
 
           if(i===6) { // max
             break;

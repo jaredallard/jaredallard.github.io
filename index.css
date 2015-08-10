@@ -1,0 +1,234 @@
+/**
+ * CSS File.
+ **/
+
+ .body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+ }
+
+/** I: Header **/
+.header {
+  width:100%;
+  height:200px;
+  background-color:#333333;
+}
+
+.header-inner {
+  height: inherit;
+}
+
+.header-name {
+  text-align: center;
+}
+
+.header-name-inner {
+  margin:0;
+  padding:0;
+
+  padding-top:40px;
+
+  color:#FFFFFF;
+}
+
+.header-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size:0.85em;
+
+  padding-top:5px;
+
+  color:#FFFFFF;
+}
+
+.header-btns {
+  height:50px;
+  max-width:500px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-top:30px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color:#cbcbcb;
+
+  text-align: center;
+}
+
+.nav-btn {
+  display:inline-block;
+  height:50px;
+  line-height: 50px;
+  width:auto;
+
+  padding-right:20px;
+  padding-left:20px;
+}
+
+.nav-btn:hover {
+  background-color:#474747;
+}
+
+/** II: Body **/
+.body {
+  width:100%;
+  height:auto;
+}
+
+.body-inner {
+  width:100%;
+  max-width:1000px;
+
+  padding-top:50px;
+  padding-bottom:50px;
+
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.body-about-wrapper {
+  padding:0px 10px 30px 13px;
+
+  font-size:1.5em;
+  color:#727272;
+}
+
+.body-about a {
+  color:#337AB7;
+}
+
+.github-repo {
+  width:100%;
+  height:80px;
+}
+
+.github-repo:hover {
+  background-color:#f7f7f7;
+}
+
+.github-repo-inner {
+  padding:5px 10px 5px 10px;
+}
+
+.github-repo-name {
+  float:left;
+  font-size:1.7em;
+}
+
+.github-repo-header-wrapper {
+  padding:0px 10px 0px 10px;
+}
+
+.github-repo-loading {
+  padding-left:10px;
+}
+
+.github-repo-header {
+  font-weight: 400;
+}
+
+.github-repo-desc {
+  color:#7f7f7f;
+}
+
+.github-repo-info {
+  height:inherit;
+  line-height: 80px;
+  float:right;
+}
+
+.github-repo-star,
+.github-repo-watch {
+  color:#7f7f7f;
+}
+
+
+/** III: Tweets **/
+.twitter-timeline {
+  max-height:500px;
+  width:100%;
+  overflow-y:scroll;
+}
+.twitter-timeline ul {
+  list-style: none;
+  padding-left:10px;
+}
+
+span[data-scribe="element:screen_name"] {
+  display:none;
+}
+span[data-scribe='element:name'] {
+  padding-left:10px;
+}
+
+.twitter-timeline li {
+  margin-bottom:20px;
+  border-bottom:1px solid #f4f4f4;
+}
+
+.user {
+  margin-bottom:10px;
+}
+
+.tweet {
+
+}
+
+.interact {
+  display:none;
+}
+
+/** IV: Contact **/
+.contact-wrapper {
+    text-align: left;
+    width:320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:75px;
+}
+
+.contact-header {
+  text-align: center;
+  font-size:2em;
+  padding-bottom:10px;
+}
+
+.contact-object {
+  height:50px;
+  display:inline-block;
+}
+
+.contact-object i {
+  float:left;
+  color:#4c4c4c;
+  font-size:2em;
+}
+
+.contact-object a {
+  color:#8b8b8b;
+  float:left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-left:10px;
+  font-size: 1.3em;
+}
+
+.contact-object a:hover {
+  text-decoration: none;
+  color:#b2b2b2;
+}
+
+/** V: Copyright **/
+.copyright-wrapper {
+  height:125px;
+  line-height: 115px;
+  background-color: #333333;
+  color:#FFFFFF;
+}
+
+.copyright-inner {
+  text-align: center;
+  font-size:1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}

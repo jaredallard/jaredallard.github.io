@@ -1,0 +1,57 @@
+/**
+ * Sass it up!
+ **/
+html, body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  background-color: #2C3E50 !important;
+  color: #FFFFFF; }
+
+a {
+  color: #FFFFFF;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  text-decoration: none; }
+
+a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none; }
+
+.textbox {
+  padding: 20px;
+  padding-top: 10px;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.85); }
+
+.cmd {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  font-size: 2em;
+  /**
+   * Project Sub Class
+   **/ }
+  .cmd .exec {
+    color: #e94b35;
+    border-bottom: 2px dotted rgba(233, 75, 53, 0.5);
+    text-decoration: none; }
+  .cmd .copyright {
+    font-size: 0.65em; }
+  .cmd .project .desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.75em; }
+
+.prompt {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+.code {
+  font-size: 1.1em; }
+
+.info {
+  margin: 20px;
+  margin-bottom: 60px; }
+
+.hljs {
+  background-color: rgba(255, 255, 255, 0) !important; }

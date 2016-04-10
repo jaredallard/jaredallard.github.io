@@ -1,0 +1,27 @@
+{
+  "name": "jaredallard.me",
+  "version": "1.0.0",
+  "description": "Source of jaredallard.me",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredallard/jaredallard.github.io.git"
+  },
+  "keywords": [
+    "jared",
+    "allard"
+  ],
+  "author": "Jared Allard <jaredallard@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredallard/jaredallard.github.io/issues"
+  },
+  "homepage": "https://github.com/jaredallard/jaredallard.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

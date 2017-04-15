@@ -2,17 +2,13 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width">
-    
+
     <title>Jared Allard</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css' />
 
-    <link href='/dist/css/main/main.css' rel='stylesheet' type='text/css' />
-    <link href="/dist/css/main/tomorrow-night-eighties.css" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript" src="https://oss.maxcdn.com/jquery/2.2.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <link href='dist/css/main/main.css' rel='stylesheet' type='text/css' />
   </head>
 
   <body>
@@ -20,30 +16,22 @@
 
       <div class='info'>
         <h1>Jared Allard</h1>
-        <p>Full Stack Engineer @ <a href="https://staymarta.com">StayMarta</a></p>
+        <p>Full Stack Developer</p>
+        <span class='item'>Seattle, WA</span>
       </div>
 
       <h3># Who am I</h3>
       <p class='textbox'>
-        I'm a highly motivated full stack engineer obsessed with performance and scalability.<br />
-        When I'm not working on my various open source projects, I'm teaching <br />
-        the <a href="https://github.com/programmingandlogic">programming and logic</a> class at Nova High School.
+        I'm a 19 year old software engineer. I specialize in teaching programming
+        and writing highly available backends. Currently I manage a team of developers
+        and write the backend for <a href="https://staymarta.com">StayMarta</a>.
 
         <br /><br />
 
-        Chances are, you've probably heard of <a href="https://github.com/jaredallard/nexe">nexe</a>, downloaded over 20,000 times a month, <br />
-        one of the most popular projects I work on. I also mantain the only modern php to exe <br />
-        compilier currently available, <a href="https://github.com/jaredallard/phc-win">phc-win</a>.
-
-        <br /><br />
-
-        If you're looking for a Javascript Full Stack or Backend Engineer, I can help.
+        Please feel free to contact me if you're interested in learning programming
+        or want to grab a cup of coffee in Seattle, WA. Also, check out my
+        <a href="https://blog.jaredallard.me">blog</a> about programming!
       </p>
-
-      <h3># Things I work with</h3>
-      <div class='cmd'>
-        $&nbsp;&nbsp;<span class='exec'>{{items}}</span>
-      </div>
 
       <h3># My Projects</h3>
       <div class='cmd'>
@@ -62,107 +50,29 @@
         <div class='project'>
           > <a href="https://github.com/jaredallard/shinojs">shinojs</a> -
           <span class='desc'>
-            simplified and powerful <a href='https://twitter.com'>Twitter</a> bot framework.
+            simplified and powerful <a href='https://twitter.com'>Twitter</a> bot framework
           </span>
         </div>
         <div class='project'>
           > <a href="https://github.com/staymarta">staymarta</a> -
           <span class='desc'>
-            A Airbnb like housing / adventure platform, my work at this company.
+            A Airbnb like housing / adventure platform
           </span>
         </div>
       </div>
 
       <h3># Contact Me</h3>
       <div class="cmd code">
-        <span class='prompt'>$ </span>echo "Subject: Hi!\n\n Hello Jared" > /tmp/email.txt
-        <br />
-        <span class='prompt'>$ </span>sendmail jaredallard@outlook.com < /tmp/email.txt
-
-        <br /><br />
-        
-        <h4><b>Email:</b> <a href="mailto:jaredallard@outlook.com">jaredallard(at)outlook(dot)com</a></h4>
-        <h4><b>Twitter:</b> <a href="https://twitter.com/jaredallard">@jaredallard</a></h4>
+        <h4><a href="mailto:jaredallard@outlook.com">jaredallard(at)outlook(dot)com</a></h4>
+        <h4><a href="https://twitter.com/jaredallard">@jaredallard</a></h4>
       </div>
-
-
-      <h3># Legalese</h3>
-      <div class='cmd'>
-        <p class='copyright'>
-          (c) 2017 Jared Allard
-          <br />
-          MIT License
-        </p>
-      </div>
+      <br />
     </div>
 
-    <script type="text/javascript">
-      "use strict";
-
-      const list = [
-        'docker',
-        'node',
-        'gulp',
-        'mocha',
-        'meteor',
-        'expressjs'
-      ];
-
-      let container = $('.exec');
-
-      container.html(list[0]); // initial fill
-
-      let asyncEach = (arr, op, finish, start, pos) => {
-        let array_position = pos || (start || 0);
-
-        // done.
-        if(Math.floor(array_position+1) === arr.length) return finish();
-
-        let cb = err => {
-          if(err) {
-            return finish(err);
-          }
-
-          return asyncEach(arr, op, finish, start, array_position+1);
-        }
-
-        // execute supplied operation with arr[our_position] as value, with callback.
-        return op(arr[array_position], cb);
-      }
-
-
-      let showTools = (isNotNew) => {
-        let pos = 1;
-        if(isNotNew) {
-          pos = 0;
-        }
-
-        asyncEach(list, (project, next) => {
-          setTimeout(() => {
-            container.fadeOut(400, () => {
-              container.html(project);
-              container.fadeIn(400, () => {
-                next();
-              })
-            })
-          }, 1500)
-        }, err => {
-          if(err) {
-            return console.error(err);
-          }
-
-          return showTools(true);
-        }, pos);
-      }
-
-      showTools();
-
-      // Highlight contact code
-      $(document).ready(() => {
-        $('.code').each((i, block) => {
-          hljs.highlightBlock(block);
-        });
-      });
-    </script>
+    <div class='footer'>
+        Created by <a href="/">Jared Allard</a>.
+        <br />
+        &copy; 2017 MIT license
+    </div>
   </body>
 </html>

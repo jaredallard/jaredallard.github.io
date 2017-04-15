@@ -22,6 +22,11 @@ a:hover {
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.85); }
 
+.item {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.9em; }
+
 .cmd {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
@@ -55,3 +60,14 @@ a:hover {
 
 .hljs {
   background-color: rgba(255, 255, 255, 0) !important; }
+
+.footer {
+  color: white;
+  border-top: 1px solid #233140;
+  text-align: center;
+  font-size: 20px;
+  padding: 100px;
+  background-color: #233140;
+  margin: 0; }
+  .footer a {
+    color: white; }

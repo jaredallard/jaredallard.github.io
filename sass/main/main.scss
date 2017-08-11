@@ -102,3 +102,19 @@ a:hover {
     color: $color;
   }
 }
+
+.languages {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.language {
+  text-decoration: none;
+  border-bottom: none;
+  color: rgb(218, 223, 225);
+  font-family: 'Dosis', sans-serif;
+  font-size: 0.9em;
+  width: 50px;
+  text-align: center; float: left;
+}

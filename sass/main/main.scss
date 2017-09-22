@@ -30,6 +30,12 @@ a:hover {
   padding-top:10px;
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.90);
+
+  ul {
+    li {
+      font-size: 1.8em;
+    }
+  }
 }
 
 .item {

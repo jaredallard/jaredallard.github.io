@@ -6,7 +6,7 @@ html, body {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
 
-  background-color: #2C3E50 !important;
+  background-color: #333333 !important;
   color: #FFFFFF;
 }
 
@@ -89,10 +89,29 @@ div {
   margin:20px;
 
   margin-bottom:60px;
+
+  img {
+    height: 125px;
+    width: auto;
+
+    border-radius: 100%;
+    float: left;
+
+    margin-right: 20px;
+
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+
+    margin-left: -20px;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
 }
 
 .footer {
-  $bg: #233140;
+  $bg: #474747;
   $color: white;
 
   color:  $color;
@@ -149,13 +168,22 @@ div {
   a {
     text-decoration: none;
     border-bottom: none;
-    font-size: 2.6em;
+
+    i {
+      font-size: 2.6em;
+    }
   }
 
   a:hover,
   a:focus {
     opacity: 0.6
   }
+
+  span {
+    margin-right: 10px;
+  }
+
+  font-size: 1em;
 
 
   /* icon styles */
@@ -169,5 +197,13 @@ div {
 
   .socicon-outlook {
     color: #0072C6;
+  }
+
+  .socicon-paypal {
+    color: #009cde;
+  }
+
+  .socicon-patreon {
+    color: #F96854;
   }
 }

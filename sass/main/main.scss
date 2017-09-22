@@ -8,6 +8,8 @@ html, body {
 
   background-color: #333333 !important;
   color: #FFFFFF;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 h3 {
@@ -111,6 +113,11 @@ div {
   h1 {
     padding-top: 10px;
   }
+}
+
+span {
+  font-family: 'Dosis', sans-serif;
+  font-weight:600 !important;
 }
 
 .footer {

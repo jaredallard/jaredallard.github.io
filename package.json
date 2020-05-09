@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/jaredallard/jaredallard.github.io#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
